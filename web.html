@@ -1,0 +1,214 @@
+			
+<!-- 2023/11/06  -->
+<!-- 4.8 open.uom web design for beginners  -->
+		
+		<!-- 4.8 Java Script Error Handling  -->
+
+<!-- 
+Java Script Error Handling 
+
+	** When executing Java Script code, different errors can occur.
+	** Errors can be coding errors made by the programmer, errors due to 
+		wrong input, and other unforeseeable things.
+
+			>> Try catch 
+			>> The finally 
+			>> Range error 
+			>> Reference error 
+			>> Syntax Error 
+			>> Type error 
+
+ -->	
+
+<!-- 
+ 	1- Try catch *** 
+
+ 	<script>	
+	 	try {
+ 			addddlert("Welcome for the error handling")
+ 		}
+ 		catch(err) {
+ 			doument.getElementById("sample").inner.HTML = err.message;
+ 		}
+ 	</script>
+
+
+		----------------------------------------
+				try{
+ 					// try something 
+ 				}
+
+ 				catch(error) {
+ 					// handle the error
+ 				}
+
+ 				finally {
+ 					// do this anyway
+ 				}
+
+ 		----------------------------------------		
+
+ 		2- The Finally 
+
+
+		try{
+			console.log(Myname)
+		}
+		catch(error){
+			console.log(error)
+		}
+
+		finally{
+			console.log("try... catch statement ended...")
+		}
+
+		-------------------------------------------------------------
+
+		3- Range Error 
+
+			** A RangeError is thrown if we use a value outside the range
+
+			let num = 1;
+
+			try{
+				num.toPrecision(500); // a number cannot have 500 significant digits
+			}
+			catch(err){
+				document.getElementById("demo").innerHTML = err.name;
+			}
+
+		---------------------------------------------------------------
+
+		4- Reference Error 
+
+			** If we refer to variable that has not been declared.
+
+			let x = 5;
+			try {
+				x = y + 1; // y cannot be used (referenced)
+			}
+			catch(err) {
+				document.getElementById("demo").innerHTML = err.name;
+			}
+
+		-----------------------------------------------------------------
+
+		5- Syntax Error
+
+			** A SyntaxError is thrown if we try to evaluate code with a syntax error.
+
+				** Syntax is the grammar of the JavaScript 
+
+			try {
+				eval("alert('hello)"); // Missing ' will produce an error 
+			}
+			catch(err) {
+				document.getElementById("demo").innerHTML = err.name;
+			}
+
+		-------------------------------------------------------------------	
+
+		6- Type Error 
+
+			** A TypeError is thrown if you use a value that is outside the range of 
+				expected types:
+
+				let num = 1;
+				try {
+					num.toUpperCase(); // You cannot convert a number to upper case 
+				}
+				catch(err){
+					document.getElementById("demo").innerHTML = err.name;
+				}
+
+		---------------------------------------------------------------------
+ -->
+
+
+
+<html>
+<head><title>Handling Errors</title></head>
+<body>
+	<input id="sample" type="text">
+	<button type="button" onclick="myFunction()">Test Input</button>
+	<p id= "a1"></p>
+
+<script>
+	function myFunction(){
+		const message = document.getElementById("a1");
+		message.innerHTML = "";
+		let x = document.getElementById("sample").value;
+
+		try {
+			if (x == "") throw "empty";
+			if (inNaN()) throw "not a number";
+		}	x = Number(x);
+			if (x < 5) throw "too low"
+			if (x > 10) throw "too high"
+	
+		catch(err){
+			message.innerHTML = "Input is " + err ;
+		}
+
+	}
+</script>
+
+</body>
+</html>
+
+
+<html>
+<head><title>Handling Errors</title></head>
+<body>
+	<input id="sample" type="text">
+	<button type="button" onclick="myFunction()">Test Input</button>
+	<p id= "a1"></p>
+
+<script>
+	function myFunction(){
+		const message = document.getElementById("a1");
+		message.innerHTML = "";
+		let x = document.getElementById("sample").value;
+
+		try {
+			if (x == "") throw "empty";
+			if (inNaN()) throw "not a number";
+		}	x = Number(x);
+			if (x < 5) throw "too low"
+			if (x > 10) throw "too high"
+	
+		catch(err){
+			message.innerHTML = "Input is " + err ;
+
+		finally {
+			document.getElementById("demo").value = "";
+		}
+
+
+		}
+
+	}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
