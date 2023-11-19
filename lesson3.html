@@ -1,0 +1,129 @@
+
+                <!-- Lesson 3
+        Hovers, Transitions, Shadows  -->
+
+<br/>
+<br/>
+<br/>
+<style>
+    .subscribe-button{
+        background-color:rgb(200,0,0) ;
+        color:white;
+        border: none;
+        height: 36px;
+        width:100px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-family: arial;
+        font-size: 14px;
+
+        /* this is the transition for 3--*/
+        transition: opacity 0.15s; 
+    }
+                /* This is how to add a hover --->>> */
+                /* ## there is hover is named by pseudo-class */
+
+                /* 1-- */
+    /* .subscribe-button:hover{
+        background-color: green;
+   }
+    
+    .subscribe-button:active {
+        background-color: blue;
+
+    } */
+
+            /* 2-- */
+        /* there is opacity range is between 0 and 1 */
+        /* 1 is normal */
+
+    .subscribe-button:hover{
+        opacity: 0.7;
+    }
+    .subscribe-button:active{
+        opacity: 0.5;
+    }
+    /* ---------- */
+
+    /* 3-- let's try to add a transition */
+
+    .join-button{
+        background-color: white;
+        border-radius: 2.5px;
+        border-width: 1px;
+        border-color:rgb(9, 86, 210);
+        border-style: solid;
+        height: 36px;
+        width: 63px;
+        cursor: pointer;
+        color: rgb(9, 86, 210);
+        margin-left: 8px;
+        transition: background-color 0.15s,
+        color 0.15s;
+
+            /* now we try to do this for the join button */
+    }
+    .join-button:hover{
+        background-color:rgb(9, 86, 210); 
+        color:white;
+    }
+    .join-button:active{
+        opacity: 0.6;
+    }
+
+        /* 4-- let's try to how add shadow */
+
+    .tweet-button{
+        background-color: rgb(60, 167, 240);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 78px;
+        border-radius: 18px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 8px;
+
+        transition: box-shadow 0.15s;
+        
+        /* this is how to add a shadow for 4--*/
+        /* there is 4 values and this property name is
+        box-shadow */
+        /* and now lets try to do the transition for this 
+        shadow */
+    }
+
+    .tweet-button:hover{
+        shape-outside: margin-box;
+        box-shadow: 3.5px 4px 8px rgba(0,0,0,0.4);
+    }
+
+    .tweet-button:active{
+        opacity: 0.7;
+    }
+
+
+</style>
+<button class="subscribe-button">
+SUBSCRIBE
+</button>
+
+<button class="join-button">
+    JOIN
+</button>
+
+<button class="tweet-button">
+    Tweet
+</button>
+
+
+<!-- how to add a hover 
+        .class_name:hover{
+            background-color: green;
+        }
+-->
+
+        <!-- ---------- lesson 3 is over ------------ -->
+
+
