@@ -1,5 +1,5 @@
 .thumbnail1{
-    width: 400px;
+    width: 300px;
     /* height:200px; */
     /* height: 300px;    */
     /* border-width: 2px; */
@@ -22,3 +22,26 @@
     border-radius: 50px;
     margin-left: 12px;
 }
+.video-title{
+    width: 300px;
+}
+.video-aurthor,
+.video-status{
+    display: inline-block;
+}
+.thumbnail1{
+    width: 300px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
