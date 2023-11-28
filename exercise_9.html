@@ -1,0 +1,278 @@
+
+<!-- Lesson 9 Exercises - The <div> Element -->
+    <!-- First, we'll show that a <div> is just a box:
+
+        9a. Create a <div> and turn it into a red squre
+
+        9b. Create a <div> and turn it into a green circle
+
+        9c. Recreate this design by wrapping the elements
+            in a <div> and adding a border
+
+        9d. Recreate this design using a <div> with 2 paragraphs
+            inside -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise-9-<div> element</title>
+<style>
+    .red-box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: none;
+    }
+    .green-circle{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border: none;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
+    .border{
+        border-width: 1px;
+        border-style: solid;
+        width: 300px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    .p1{
+        font-family: arial;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .b1{
+        margin-left:20px;
+    }
+    .box{
+        width: 320px;
+        height: 100px;
+        background-color: rgb(42, 39, 39);
+    }
+    .topic{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 19px;
+        color: white;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+    .description{
+        font-family: sans-serif;
+        font-size: 13px;
+        color: gray;
+        line-height: 14px;
+        margin-left: 20px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .img1{
+        width:50px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        display: inline-block;
+        object-fit: cover;
+        vertical-align: top;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .whats{
+        display: inline-block;
+        margin-left:20px;
+        vertical-align: top;
+        margin-top: 20px;
+        font-family: sans-serif;
+        color: rgb(83, 77, 77);
+        font-size: 19px;
+        border: none;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 260px;
+
+    }
+    .tweet-button{
+        width: 80px;
+        height: 40px;
+        vertical-align: top;
+        margin-top: 20px;
+        margin-left: 50px;
+        background-color: rgb(15, 103, 217);
+        border: none;
+        border-radius: 19px;
+        font-weight: bold;
+        color: white;
+        font-family: sans-serif;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .tweet-button:hover{
+        opacity: 0.8;
+    }
+    .tweet-button:active{
+        opacity: 0.6;
+    }
+    .tweet{
+        border: 0px;
+        border-style: solid;
+        width: 490px;
+        height: 78px;
+        margin-top: 40px;
+        border-radius: 10px;
+        border-color: gray;
+        box-shadow: 0px 0px 6px rgba(61, 60, 60, 0.4);
+        transition: background-color 0.15s;
+    }
+    .tweet:hover{
+        background-color: rgba(214, 203, 203, 0.887);
+    }
+
+    .facebookimg{
+        width:200px;
+        height: 220px;
+        object-fit: cover;
+        margin-top: 0x;
+        margin-bottom: 0;
+        padding-bottom: 0px;
+        cursor: pointer;
+    }
+    .oliver{
+        font-family: sans-serif;
+        font-size: 22px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .friends{
+        font-family: sans-serif;
+        font-size: 15px;
+        color: gray;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+    .add{
+        font-family: sans-serif;
+        color: white;
+        background-color: rgb(12, 121, 222);
+        width: 120px;
+        height: 38px;
+        border:none;
+        border-radius: 5px;        
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top:8px;
+        cursor: pointer;
+        transition:opacity 0.15 s;
+    }
+    .add:hover{
+        opacity: 0.8;
+    }
+    .add:active{
+        opacity: 0.6;
+    }
+    .facebook{
+        display: inline-block;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        box-shadow: 0px 0px 8px rgba(111, 109, 109, 0.4);
+        border-radius: 4px;
+        margin-left:20px;
+        transition: background-color 0.15s;
+    }
+    .facebook:hover{
+        border-style: solid;
+        border-color: rgba(15, 126, 206, 0.4)   ;
+        border-width: 1px;
+        background-color: rgb(197, 217, 227);
+
+    }
+</style>
+    
+</head>
+<body>
+    <div class="red-box">
+    </div>    
+
+    <div class="green-circle">
+    </div>
+
+    <div class="border">
+        <p class="p1">Satisfied with our service?</p>
+        <button class="b1"> Yes </button>
+        <button class="b2"> No</button>
+    </div>
+
+    <div class="box">
+        <p class="topic">Install YouTube Music</p>
+        <p class="description"> Add YouTube Music to your desktop for quick and
+            easy access
+        </p>
+    </div>
+
+    <div class="tweet">
+        <img class="img1" src="thumbnail-1.png">
+        <input class="whats" type="text" placeholder=" What's happening?" >
+        <button class="tweet-button">Tweet</button>
+    </div>
+
+    <div class="facebook">
+        <img class="facebookimg" src="thumbnail-1.png">
+        
+            <p class="oliver"><strong>Oliver</strong></p>
+            <p class="friends">2 mutal friends</p>
+            <button class="add">Add Friends</button>
+        
+    </div>
+    <div class="facebook">
+        <img class="facebookimg" src="thumbnail-2.png">
+        
+            <p class="oliver"><strong>Mimi</strong></p>
+            <p class="friends">3 mutal friends</p>
+            <button class="add">Add Friends</button>
+        
+    </div>    <div class="facebook">
+        <img class="facebookimg" src="cat.png">
+        
+            <p class="oliver"><strong>Super Cat</strong></p>
+            <p class="friends">4 mutal friends</p>
+            <button class="add">Add Friends</button>
+        
+    </div>
+</body>
+</html>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+
+
+
