@@ -11,7 +11,15 @@
 
         9d. Recreate this design using a <div> with 2 paragraphs
             inside -->
-
+<!--         
+        9h. Continuning from exercise 8c. we'll finish the Google
+        serach design 
+        To center everything:
+            : Wrap each line with a <div> and use text-align
+            center on the <div>
+            : Remove any uses of display: block on the image/input 
+            (display: block causes elements to take up the entire line,
+            so they can't be centered) -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -196,6 +204,43 @@
         background-color: rgb(197, 217, 227);
 
     }
+    
+    .googleimg{
+        width: 300px;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .google1{
+        width:700px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .searchbar{
+        width: 550px;
+        height: 40px;
+        padding-left: 20px;
+        margin-top: 0px;
+        font-family: sans-serif;
+        color: gray;
+        font-size: 17px;
+        border-radius: 20px;
+        border-style: none;
+        box-shadow: 0px 0px 4px rgba(37, 39, 39, 0.4);
+        margin-bottom: 40px;
+    }
+    .button1,.button2{
+        font-family: sans-serif;
+        font-size: 17px;
+        border: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: rgb(240, 241, 244);
+        margin-right: 15px;
+        cursor: pointer;
+    }
 </style>
     
 </head>
@@ -248,14 +293,28 @@
             <button class="add">Add Friends</button>
         
     </div>
+
+    <div class="google1">
+        <img src="google.png" class="googleimg">
+        <input class="searchbar" type="text" placeholder=" Search google or type a URL">
+        <button class="button1">
+            Google Search 
+        </button>
+        <button class="button2">
+            I'm Feeling Lucky
+        </button>
+    
+    </div>
+
+
+
 </body>
 </html>
 
 <br/>
 <br/>
-
-<!-- --------------------------- lesson 9 is over ---------------------- -->
-
+<br/>
+        <!-- -------------- lesson 9 is over ------------------------- -->
 
 
 
