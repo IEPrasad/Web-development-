@@ -1,16 +1,16 @@
-.thumbnail1{
-    width: 300px;
+/* .thumbnail1{ */
+    /* width: 300px; */
     /* height:200px; */
     /* height: 300px;    */
     /* border-width: 2px; */
     /* border-style:solid; */
     /* border-color: red; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     /* object-fit: cover; */
     /* object-fit: contain; */
     /* object-position: left; */
-    cursor: pointer;
-}
+    /* cursor: pointer; */
+/* } */
 .search-bar{
     width: 200px;
     height: 20px;
@@ -21,20 +21,34 @@
     border-color: gray;
     border-radius: 50px;
     margin-left: 12px;
+    display: block;
 }
 .video-title{
     width: 300px;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin-bottom: 10px;
 }
 .video-aurthor,
 .video-status{
     display: inline-block;
+    font-family: sans-serif;
+    color: rgb(111, 110, 110);
+    margin-bottom: 0;
+    margin-top: 4px;
 }
 .thumbnail1{
     width: 300px;
     display: block;
+    margin-top: 10px;
+    cursor: pointer;
 }
-
-
+.video-preview{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
 
 
 
