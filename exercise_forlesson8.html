@@ -19,11 +19,141 @@
     }
     .p1{
         width: 220px;
-        display:block ;
+        display:inline-block ;
         vertical-align: middle;
     }
     button{
         vertical-align: middle;
+    }
+    img{
+        width: 240px;
+        margin-left: 115px;
+        display: block;
+
+        
+    }
+    .google-searchbar{
+        width: 450px;
+        height: 36px;
+        border: none;
+        border-radius: 19px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        color: gray;
+        font-size: 16px;
+        margin-left: 0;
+        margin-top: 8px;
+        
+    }
+
+    .first-name{
+        width: 200px;
+        height: 42px;
+        border-radius: 8px;
+        display: inline-block;
+        border: 2px;
+        border-style: solid;
+        border-color: rgb(196, 193, 193);
+        font-size: 17px;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+        margin-right: 1.5px;
+    }
+    .last-name{
+        width: 200px;
+        height: 42px;
+        border-radius: 8px;
+        /* display: bl; */
+        border: 2px;
+        border-style: solid;
+        border-color: rgb(196, 193, 193);
+        font-size: 17px;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+        margin-right: 2px;
+    }
+    
+    .Email{
+        width: 413px;
+        border-radius: 8px;
+        border: 2px;
+        border-style: solid;
+        border-color: rgb(196, 193, 193) ;
+        margin-top: 4px;
+        height: 42px; 
+        margin-top: 14px;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+        font-size: 17px;
+    }    
+    .signup-button{
+        color: white;
+        background-color: rgb(0, 89, 255);
+        height: 42px;
+        font-size: 17px;
+        width: 420px;
+        height: 45px;
+        border: none;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 14px;
+        font-family: sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    .signup-button:hover{
+        opacity: 0.8;
+    }
+    .signup-button:active{
+        opacity: 0.5;
+    }
+    .uber{
+        font-family: arial;
+        font-size: 37px;
+
+    }
+    .Request-button{
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        border: none;
+        margin-top: 10px;
+    }
+    .Request-button:hover{
+        opacity: 0.8;
+    }
+    .Request-button:active{
+        opacity: 0.5;
+    }
+    .Enter1,.Enter2{
+        width: 400px;
+        height: 30px;
+        font-family: arial;
+        font-size: 14px;
+        background-color: rgb(239, 238, 238);
+        border: none;
+        margin-top: 8px;
+    }
+    .schedule-button{
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color:rgb(239, 238, 238);
+        font-size: 14px;
+        border: none;
+        margin-left: 30px;
+        margin-top:10px;
+        cursor: pointer;
+
+    }
+    .schedule-button:hover{
+        opacity: 0.9;
+    }
+    .schedule-button:active{
+        opacity: 0.6;
     }
 </style>
 
@@ -49,6 +179,45 @@
         No
     </button>
         
+<br/>
+<br/>
+
+<img  src="google.png">
+<input class="google-searchbar" type="text" placeholder="   Search Google or type a URL"> 
+
+<br/>
+<br/>
+<br/>
+<input class="first-name" type="text" placeholder="  First name">
+<input class="last-name" type="text" placeholder="  Last name">
+<br/>
+<input class="Email" type="text" placeholder="  Email">
+<br/>
+<button class="signup-button">
+    Sign Up
+</button>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p class="uber"> 
+    Request a ride now
+</p>
+<input class="Enter1" type="text" placeholder="  Enter pickup location">
+<br/>
+<input class="Enter2" type="text" placeholder="  Enter destination" >
+<br/>
+
+<button class="Request-button">
+    Request now
+</button>
+<button class="schedule-button">
+    Schedule for later 
+</body>
 </body>
 
-</html>
+</html> 
+
+
