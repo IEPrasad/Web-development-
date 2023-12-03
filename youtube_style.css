@@ -16,16 +16,14 @@ p{
 }
 
 .thumb1{
-  width: 300px;
+  width: 100%;
   margin-top: 10px;
   cursor: pointer;
-  display: block; 
 }
 
 .video-title{
   font-family: Roboto;
   font-size: 14px;
-  margin-top: 12px;
   line-height: 20px;
   font-weight: 500;
   margin-bottom: 0px;
@@ -35,38 +33,37 @@ p{
 .video-author,.video-stats{
   color: rgb(96, 96, 96);
   font-size: 12px;
- 
 }
 .video-author{
   margin-bottom: 4px;
   margin-top: 12px;
 }
 
-.video-preview{
-  width: 300px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 15px;
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
 }
 
-.profile-pic{
+.channel-picture{
   width: 36px;
   height: 36px;
   border-radius: 18.5px;
   display: block;
   cursor: pointer;
-  margin-top: 12px;
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
 
 .profile{
-  width: 48px;
-  height: 100px;
-  display: inline-block;
+  margin-top: 12px;
 }
 
 .div-title{
-  display: inline-block;
-  width: 240px;
-  vertical-align: top;    
+  margin-top: 12px;
 }
 
