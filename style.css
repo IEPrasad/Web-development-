@@ -1,140 +1,69 @@
-
-.subscribe-button{
-    font-family: roboto;
-    background-color: rgb(200, 0, 0);
-    color: white;
-    border: none;
-    height: 36px;
-    width: 100px;
-    border-radius: 2.5px;
-    cursor: pointer;
-    font-size: 14px;
+p{
+  font-family: sans-serif;
+  padding: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-.join-button{
-    background-color: white;    
-    border-radius: 2.5px;
-    border-width: 1px;
-    border-color: rgb(9, 86, 210);
-    border-style: solid;
-    height: 36px;
-    width: 63px;
-    cursor: pointer;
-    color: rgb(9, 86, 210);
-    margin-left: 8px;
-    margin-right: 8px;
-    /* border:10px; */  
+body{
+  /* background-color: green; */
 }
-
-.tweet-button{
-    background-color: rgb(60, 167, 240);
-    color: white;
-    border: none;
-    height: 36px;
-    width: 78px;
-    border-radius: 18px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-
+.cat1{
+  width: 300px;
 }
-.request-now-button{
-    background-color: black;
-    color:white;
-    border:none;
-    height: 43px;
-    width : 130px;
-    cursor: pointer;
+.profile-pic{
+  /* display: inline-block; */
+  width: 50px;
+  height: 50px;
+  border-radius: 26px;
+  vertical-align: top;
+  padding-top: 0px;
+  margin-top: 0;
+  margin-left: 10px;
 }
-.addtocart-button{
-    background-color: rgb(255, 216, 20);
-    color: black;
-    border-radius: 20px;
-    height: 37px;
-    width: 200px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
+.under-image{
+  /* display: inline-block; */
 }
-.signup-button{
-    background-color: rgb(46, 164,79 );
-    height: 45px;
-    width: 130px;
-    border: none;
-    border-radius: 7px;
-    color:white;
-    font-size: 19px;
-    font-weight: bold ;
-    letter-spacing: 0.5px;
-    font-family: "Your Font Name", sans-serif;
-    cursor: pointer;
+.name{
+  display:block;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding-left: 10px;
+  font-weight: bold;
 }
-
-.getstarted-button{
-    background-color: rgb(121,82,179);
-    border: none;
-    height: 50px;
-    width: 152px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: sans-serif;
-    border-radius: 5px;
-    cursor: pointer;
-    
+.mutual-friends{
+  font-size: 15px;
+  color: gray;
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 5px;
 }
-.download-button{
-    background-color: white;
-    border-style: solid;
-    color: rgb(108, 117, 125);
-    height: 50px;
-    width: 152px;
-    border-width: 1px;
-    margin-left: 10px;
-    border-radius: 5px;
-    border-color: rgb(108, 117, 125);
-    font-weight: bold;
-    font-size: 18px;
-    font-family: sans-serif ;
-    cursor: pointer;
-
+.add-friend{
+  font-family: sans-serif;
+  border: none;
+  color: white;
+  width: 150px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: rgb(11, 75, 240);
+  text-align: center;
+  display: block;
+  margin-top: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 10px;
 }
-
-.apply-button{
-    background-color: rgb(10, 102, 194);
-    border: none;
-    border-radius: 22px;
-    height:44px;
-    width: 288px;
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-
+.add-friend:hover{
+  opacity: 0.8;
 }
-.save-button{
-    height: 44px;
-    width: 96px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: rgb(10, 102, 194);
-    cursor: pointer;
-    border-radius: 22px;
-    border-color:rgb(10, 102, 194);
-    background-color: white;
-    border-style: solid;
-    border-width: 1.5px;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 10px;
+.add-friend:active{
+  opacity: 0.5;
 }
-
-
-/* -------------- the css file for the lesson 6 ---------------------------- */
-
-
-
-
-
-
+.main-preview{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 430px;
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  /* margin-right: 20px; */
+  border-radius: 4px;
+}
