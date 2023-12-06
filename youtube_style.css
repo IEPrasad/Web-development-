@@ -1,19 +1,5 @@
 
-p{
-  font-family: Roboto,Arial,sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
-.search-bar{
-  width: 300px;
-  display: block;
-  height: 30px;
-  border-width: 2px;
-  border-style: solid;
-  font-size: 15px;
-  padding-left: 10px;
-}
 
 .thumb1{
   width: 100%;
