@@ -1,69 +1,104 @@
-p{
-  font-family: sans-serif;
-  padding: none;
-  margin-top: 0;
-  margin-bottom: 0;
+html{
+  box-sizing: border-box;
+  height: 100%;
 }
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body{
-  /* background-color: green; */
+  align-items: center;
+  background: linear-gradient(320deg, #eb92be, #ffef78,
+  #63c9b4);
+  display: flex;
+  font-family: 'Dosis', sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
 }
-.cat1{
-  width: 300px;
+
+.wrapper{
+  backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.34);    
+  flex-basis: 400px;
+  height: 540px;
+  padding: 20px 35px;
+  margin-top: 70px;
 }
-.profile-pic{
-  /* display: inline-block; */
-  width: 50px;
-  height: 50px;
-  border-radius: 26px;
-  vertical-align: top;
-  padding-top: 0px;
-  margin-top: 0;
-  margin-left: 10px;
+
+.screen{
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  font-size: 35px;
+  overflow: auto;
+  padding: 20px;
+  text-align: right;
+  width: 326px;
 }
-.under-image{
-  /* display: inline-block; */
+
+.calc-button-row{
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
 }
-.name{
-  display:block;
-  font-size: 20px;
-  font-family: sans-serif;
-  padding-left: 10px;
-  font-weight: bold;
+
+.calc-button{
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 24px;
+  height: 65px; 
 }
-.mutual-friends{
-  font-size: 15px;
-  color: gray;
-  display: inline-block;
-  margin-top: 17px;
-  margin-left: 5px;
+
+.calc-button:last-child{
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #ffff;
+  background: #d72880;
 }
-.add-friend{
-  font-family: sans-serif;
-  border: none;
-  color: white;
-  width: 150px;
-  height: 46px;
-  border-radius: 4px;
-  background-color: rgb(11, 75, 240);
-  text-align: center;
-  display: block;
-  margin-top: 12px;
-  font-size: 15px;
-  cursor: pointer;
-  margin-left: 10px;
+
+.calc-button:last-child:hover{
+  background-color: inherit;
+  color: inherit;
 }
-.add-friend:hover{
-  opacity: 0.8;
+
+.calc-button:hover{
+  background-color: inherit;
 }
-.add-friend:active{
-  opacity: 0.5;
+
+.calc-button:active{
+  background-color: #ffef78;
 }
-.main-preview{
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  width: 300px;
-  height: 430px;
-  /* display: inline-block; */
-  /* vertical-align: top; */
-  /* margin-right: 20px; */
-  border-radius: 4px;
+
+.double{
+  flex-basis: 47%;
+}
+
+.triple{
+  flex-basis: 73%;
 }
