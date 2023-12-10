@@ -1,0 +1,39 @@
+
+body{
+  padding-bottom: 400px;
+}
+.main{
+  display: grid;
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 200px;
+  width: 500px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.home{
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.number{
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 300px;
+  background-color: rgb(0, 85, 255);
+  border-radius: 15px;
+  /* width: 40px; */
+  display: flex;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-right: 10px;
+  color: white;
+}
+
+.main1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
