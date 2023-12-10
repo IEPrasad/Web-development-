@@ -1,15 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
 body{
-  padding-bottom: 400px;
+  padding-bottom: 1000px;
 }
+
 .main{
   display: grid;
   border: 1px solid gray;
   border-radius: 10px;
   height: 200px;
-  width: 500px;
+  width: min-content;
   margin-top: 40px;
   justify-content: space-between;
+  margin-left: 12px;
 }
 .home{
   font-family: sans-serif;
@@ -25,7 +32,7 @@ body{
   background-color: rgb(0, 85, 255);
   border-radius: 15px;
   /* width: 40px; */
-  display: flex;
+   display: flex;
   padding-left: 10px;
   padding-top: 3px;
   padding-right: 10px;
@@ -36,4 +43,112 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+
+
+.preview{
+  margin: 50px;
+  /* border: 2px solid gray; */
+  height: 100px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.div-a,.div-b{
+  /* border: 1px solid blue; */
+  height: 75px;
+  width: relative;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.iamge{
+  display: flex; 
+}
+.image1{
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 26px;
+  display: block;
+}
+.names{
+  display: block;
+  width: relative;
+  margin-left: 12px;
+}
+.div-a{
+  width: relative;
+}
+.div-b{
+  justify-content: right;
+  /* width: 500px; */
+}
+.follow{
+  color: white;
+  background-color: rgb(55, 101, 208);
+  border: none;
+  height: 40px;
+  width: 75px;
+  font-size: 17px; 
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.follow:hover{
+  opacity: 0.8;
+}
+.follow:active{
+  opacity: 0.6;
+}
+
+.search-bar-preview{
+  background-color: rgb(146, 57, 230);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  width: relative;
+  align-items: center;
+}
+.home{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.home:hover{
+  text-decoration: underline;
+}
+
+.search-bar{
+  height: 40px;
+  width: 600px;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  padding-left:20px;
+  margin-left: 70px;
+}
+.download-button{
+  font-size: 20px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  height: 44px;
+  width: 130px;
+  background-color: rgb(146, 57, 230);
+  margin-right: 20px;
+  margin-left: 70px;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.download-button:hover{
+  color: rgb(146, 57, 230);
+  background-color: white;
+}
+.download-button:active{
+  opacity: 0.6;
 }
