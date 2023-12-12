@@ -1,0 +1,152 @@
+*{
+  font-family: sans-serif;
+}
+
+.main-box{
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+}
+.a{
+  background-color: lightpink;
+  width: 100px;
+  display: flex;
+  align-items:center;
+}
+
+.item-1{
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  border: none;
+  margin-left: 26px;
+}
+.b{
+  background-color: lightblue;
+  width: 200px;
+}
+
+.main-box-2{
+  display: flex;
+  height: 56px;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.b1{
+  background-color: lightpink;
+  width: 100px;
+  border: none;
+}
+
+.b2{
+  background-color: lightblue;
+  width: 200px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.c{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row-1{
+  font-size: 17px;
+}
+
+.row-2{
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 17px;
+}
+/* -----------inbox */
+
+.inbox-preview{
+  display: grid;
+  /* height: 400px; */
+  width: 390px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
+  margin: 40px;
+  border-radius: 6px;
+  vertical-align: top;
+  padding: 12px;
+  padding-left: 17px;
+}
+
+.all-inboxes{
+  display: flex;
+  flex-direction: row;
+  font-size: 14 px;
+  color: gray;
+  font-family: sans-serif;
+  flex-direction: row;
+  width: 400px;
+  height: 28px;
+  margin-left: 5px;
+}
+.second{
+  display: flex; 
+  /* height: 100px; */
+  border-radius: 5px;
+  /* border: 1px solid gray; */
+  align-items: center;
+  padding: 3px;
+  margin-right: 12px;
+  margin-top: 12px    ;
+
+}
+
+.profile-picture{
+  display: block;
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid black; */
+  border-radius: 25px;
+  margin-right: 5px;
+}
+.details{
+  /* height: 90px; */
+  width: 330px;
+  /* border: 1px solid gray; */
+  align-items: center;
+  padding: 4px;
+}
+.block1{
+  /* height: 56px; */
+  /* width: 400px; */
+  /* border: 1px solid gray; */
+  display: flex;
+  padding: 2px;
+  justify-content: space-between;
+  vertical-align: bottom;
+}
+.block2{
+  /* border: 1px solid gray; */
+  display: block;
+  color: gray;
+  font-size: 15px;
+}
+.name{
+  /* height: 50px;   */
+  /* border: 1px solid gray; */
+}
+.time{
+  justify-content: right;
+  align-items: right;
+  height: 40px;
+  /* border: 1px solid gray; */
+  color: gray;
+  font-size: 14px;
+
+}
+.name1{
+  font-size: 16px;
+  font-weight: bold;
+}
+.name2{
+  font-size: 15px;
+  font-weight: bold;
+}
