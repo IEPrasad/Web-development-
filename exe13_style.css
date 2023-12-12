@@ -1,7 +1,10 @@
 *{
   font-family: sans-serif;
 }
-
+body{
+  padding-bottom: 500px;
+  }
+}
 .main-box{
   display: flex;
   flex-direction: row;
@@ -150,3 +153,113 @@
   font-size: 15px;
   font-weight: bold;
 }
+
+/* --------- last one in 13---- */
+
+.last-preview{
+  display: flex;
+  height: min-content;
+  width: min-content;
+  border: 1px solid gray;
+}
+
+.l1{
+  display: block;
+  height: 100px;
+  padding: 12px;
+  margin-right: 20px;
+}
+
+.l2{
+  display:block;
+  width: 490px;
+}
+.l-profile-picture{
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 35px;
+}
+
+.l2-A{
+  width: 490px;
+}
+
+.first-row{
+  height: 30px;
+  width: 470px;
+  margin: 4px;
+  display: flex;
+  vertical-align: top;
+}
+
+.p1{
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 6px;
+  padding:0;
+}
+
+.p2{
+  font-size: 22px;
+  color: gray;
+  padding: 0;
+}
+
+.second-row{
+  height: 60px;
+  width: 470px;
+  margin: 4px;
+}
+
+.p3{
+  font-size: 22px;
+}
+
+.l2-B{
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 17px;
+}
+.relative-video-preview{
+  height: 130px;
+  width: 480px;
+  border: 2px solid rgb(194, 190, 190);
+  border-radius: 20px;
+  display: flex;
+  border-left: none;
+}
+.r-v-p-1{
+  background-color: rgb(194, 190, 190);
+  height: 130px;
+  width: 140px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-left: -1px;
+}
+.r-v-p-2{
+    display: grid;
+    padding-left: 17px;
+}
+.r-v-p-2-1{
+  margin: 4px;
+  width: 320px;
+}
+
+.p4{
+  font-size: 22px;
+  color: gray;
+  margin-top: 15px;
+}
+
+.r-v-p-2-2{
+  margin: 4px;
+  height: 70px;
+  width: 320px;
+  font-size: 22px;
+}
+
+
+
+
+
