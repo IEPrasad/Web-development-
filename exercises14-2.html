@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 14 - position fixed</title>
+  <style>
+    .main{
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 400px;
+    }
+    .A{
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      background-color: rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+    }
+    .B{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 100px;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      background-color: rgba(0,0,0,0.7);
+    }
+    .image{
+      height: 60px;
+      width: 60px;
+      border-radius: 30px;
+      margin-top: 20px;
+    }
+  .B-1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 0;
+    height: 40px;
+  }
+  .plus-icon{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+  .info{
+    cursor: pointer;
+  }
+  .B-2{
+    margin-top: 0;
+  }
+  .B-2-all{
+    color: gray;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  body{
+    padding-bottom: 3000px;
+  }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="A">
+      <img class="image" src="Profile-pictures/channel-6.jpeg">
+      <img class="image" src="Profile-pictures/channel-3.jpeg">
+      <img  class="image" src="Profile-pictures/channel-5.jpeg">
+    </div>
+    <div class="B">
+      <div class="B-1">
+        <div class="info">INFO</div>
+        <div><img class="plus-icon" src="icons/plus-mark.png"></div>
+      </div>
+      <div claa="B-2">
+        <div style="margin-top: 0;" class="B-2-all"># new-videos</div>
+        <div class="B-2-all"># updates</div>
+        <div class="B-2-all"># faq</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
