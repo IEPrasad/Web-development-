@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Css Position-2-absolute</title>
+</head>
+<body style="height: 3000px;
+  padding-top: 60px;
+  padding-left: 80px;">
+  <div  style="
+    background-color: rgb(18, 129, 109);
+    height: 50px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* z-index: 1; */
+    ">
+    header
+  </div>
+  <div style="
+    background-color: green;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    top: 50px;">
+    side bar
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    right: 0;
+    top:0;
+    ">
+  X
+</div>
+  </div>
+  
+  
+  <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 10px;
+      top: 60px;
+      ">
+    absolute
+  </div>
+
+
+  <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: static;">
+    div 1
+  </div>
+  <div style="
+    position: relative;
+    background-color: lightblue;
+    height: 200px;
+    width: 200px">
+    div 2
+    <div style="
+    position: absolute;
+    background-color: black;
+    color: white;
+    right: 10px;
+    bottom: 10px;
+    ">
+  10:20
+</div>
+  </div>
+</body>
+</html>
+
+
+
+
+<!-- position-fixed = placed in the "browser window"
+position-absolute = placed on the page -->
+
+<!-- ** we can put the absolute inside to the fixed element 
+and it is very important to our code  -->
+
+<!-- position: static is the default value; -->
+
+<!-- and we can put the absolute inside the position-relative
+ex: for video thumb time range -->
