@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #373737;
+    }
+
+    .btns{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 35px;
+    }
+
+    button{
+      margin: 10px;
+      padding: 20px 70px;
+      position: relative;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1 px;
+      background: #000;
+      z-index: 0;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    button:first-child{
+      border: 2px solid #42eb0f;
+      color: #42eb0f;
+      box-shadow: 0 0 20px 0 #42eb0f;     
+    }
+
+    button:nth-child(2){
+      border: 2px solid #eb0feb;
+      color: #eb0feb;
+      box-shadow: 0 0 20px 0 #eb0feb;     
+    }
+    button:last-child{
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      box-shadow: 0 0 20px 0 #00ffff;     
+    }
+
+    button::before{
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 10px;
+      height: 10px;
+      transition: 0.5s;
+      background: #000;
+      z-index: -1;
+      border-radius: 50%;
+    }
+    
+    button:first-child::before{
+      border: 2px solid #42eb0f;
+    }
+
+    button:nth-child(2)::before{
+      border: 2px solid #eb0feb;
+    }
+
+    button:last-child::before{
+      border: 2px solid #00ffff;
+    }
+
+    button::after{
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transition: 0.5s;
+      background: #000;
+      z-index: -1;
+    }
+
+    button:first-child::after{
+      border: 2px solid #42eb0f;
+    }
+    button:nth-child(2)::after{
+      border: 2px solid #eb0feb;
+    }
+    button:last-child::after{
+      border: 2px solid #00ffff;
+    }
+
+    button:hover::before{
+      left: calc(100% - 5px)
+    }
+
+    button:hover::after{
+      right: calc(100% - 5px)
+    }
+
+    button:hover{
+      color: #000;
+      /* border: 2px solid rgba(0,0,0,0.5) */
+    }
+
+    button:first-child:hover{
+      background: #42eb0f;
+      box-shadow: 0 0 60px 0 #42eb0f;
+    }
+
+    button:nth-child(2):hover{
+      background: #eb0feb;
+      box-shadow: 0 0 60px 0 #eb0feb;
+    }
+    button:last-child:hover{
+      background: #00ffff;
+      box-shadow: 0 0 60px 0 #00ffff;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="btns">
+    <button>Button</button>
+    <button>Button</button>
+    <button>Button</button>
+  </div>
+</body>
+</html>
