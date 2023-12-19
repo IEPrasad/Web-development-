@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exercises - 15 | Position -2|</title>
+
+  <style>
+    body{
+      padding-bottom: 1000px;
+    }
+    .close-button{
+      position: absolute;
+      height: 45px;
+      width: 45px; 
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      font-size: 22px;
+      font-family: sans-serif;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .stick-box{
+      height: 180px;
+      width: 320px;
+      background-color: rgba(0,0,0,0.3);
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .box{
+      height: 180px;
+      width: 320px;
+      background-color: rgba(0,0,0,0.3);
+      position: fixed;
+      top: 40px;
+      left: 20px;
+      position: fixed;
+    }
+
+    .close{
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      border: none;
+      font-size: 24px;
+      font-family: sans-serif;
+      top: -16px;
+      left: -16px;
+      padding: 0;
+    }
+
+    .box-2{
+      height: 180px;
+      width: 320px;
+      background-color: rgba(0,0,0,0.3);
+      position: fixed;
+      top: 260px;
+      left: 20px;
+      /* position: fixed; */
+    }
+
+    .close-2{
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      border: none;
+      font-size: 24px;
+      font-family: sans-serif;
+      top: -16px;
+      left: -16px;
+    }
+    .time{
+      position: absolute;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      background-color: black;
+      border-radius: 5px;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      right: 10px;
+      bottom: 10px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <div class="button-1">
+    <button class="close-button">
+      X
+    </button>
+  </div>  
+
+  <div class="stick-box">
+  </div>
+
+  <div class="box">
+    <div><button class="close">x</button></div>
+  </div>
+
+  <div class="box-2">
+    <div><button class="close-2">x</button></div>
+    <div class="time">12:20</div>
+  </div>
+
+
+</body>
+</html>
