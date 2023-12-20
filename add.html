@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add-exercises15</title>
+  <style>
+    body{
+      background-image:url('background.avif');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .add{
+      height: 400px;
+      width: 320px;
+      position: relative;
+      top: 60px;
+      left: 20px;
+      background-color: red;
+
+    }
+    .offer{
+      font-family: sans-serif;
+      position: absolute;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      background-color: black;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      right: 0px;
+      top: 10px;
+    }
+    .image{
+      position: absolute;
+      height: 400px;
+      width: 320px;
+      padding-bottom: 1000px;
+      background-color: transparent;
+    }
+    .add-2{
+      height: 400px;
+      width: 320px;
+      position: relative;
+      top: 160px;
+      left: 20px;
+    }
+    .add-button{
+      position: absolute;
+      border: 1px solid black;
+      font-size: 22px;
+      right: 100px;
+      bottom: 40px;
+      z-index: 10;
+    }
+    .button-background{
+      background-color: rgb(236, 224, 224);
+      height: 130px;
+      width: 320px;
+      bottom: 0;
+      position: absolute;
+      background-color: rgb(157, 146, 146);
+      opacity: 0.5;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="add">
+    <div><img  class='image' src="shirt.avif"></div>
+    <div class="offer">20% OFF</div>
+  </div>
+
+  <div class="add-2">
+    <div><img  class='image' src="shirt.avif"></div>
+    <div class="offer">20% OFF</div>
+    <div class="button-background"></div>
+    <div><button class="add-button">Add to Cart</button></div>
+  </div>
+
+
+</body>
+</html>
