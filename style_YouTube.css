@@ -23,7 +23,7 @@
 }
 .video-author{
   margin-bottom: 4px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .video-grid{
@@ -36,7 +36,7 @@
 .channel-picture{
   width: 36px;
   height: 36px;
-  border-radius: 18.5px;
+  border-radius: 50%;
   display: block;
   cursor: pointer;
 }
@@ -47,7 +47,8 @@
 }
 
 .profile{
-  margin-top: 12px;
+  margin-top: 8px;
+  width: 40px;
 }
 
 .video-time{
@@ -64,7 +65,7 @@
   }
 
 .div-title{
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .video-thumb{
