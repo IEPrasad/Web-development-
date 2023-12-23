@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .a {
+      display: flex;
+      align-items: center;
+      width: 300px;
+      height: 100px;
+      border: 2px solid gray;
+      padding: 8px;
+      z-index: 2;
+    }
+
+    .image1 {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    .a:hover + .b{
+      opacity: 1;
+    }
+
+    .name1 {
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 12px;
+    }
+
+    .b {
+      display: flex;
+      align-items: center;
+      border: 2px solid red;
+      margin-top: 20px;
+      padding: 5px;
+      height: 75px;
+      width: 278px;
+      opacity: 0;
+      z-index: 100;
+    }
+
+    .image2 {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .name2 {
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="a">
+    <div class="image"><img class="image1" src="Profile-pictures/channel-3.jpeg" alt=""></div>
+    <div class="name1">Super simple dev</div>
+  </div>  
+  <div class="b">
+    <img class="image2" src="Profile-pictures/channel-4.jpeg" alt="">
+    <div class="name2">This is the example</div>
+  </div>
+</body>
+</html>
