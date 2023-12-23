@@ -41,6 +41,47 @@
   cursor: pointer;
 }
 
+.channel-picture:hover + .hover-chanel-pic-main {
+  opacity: 1;
+}
+.hover-chanel-pic-main{
+  display: flex;
+  align-items: center;
+  width: 265px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 12px;
+  z-index: 200;
+  opacity: 0;
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+  transition: opacity 0.25s;
+}
+
+.hover-details{
+  /* opacity: 0; */
+  display: grid;
+  flex-direction: row;
+  font-family: Roboto, arial, sans-serif;
+}
+.hover-name{
+  font-size: 17px;
+  font-weight: bold;
+}
+.hover-subs{
+  font-size: 16px;
+  color: gray;
+}
+
+
+.hover-picture{
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 20px;
+}
+
+
 .video-info-grid{
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -49,6 +90,7 @@
 .profile{
   margin-top: 8px;
   width: 40px;
+  z-index: 1;
 }
 
 .video-time{
