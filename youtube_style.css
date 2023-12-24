@@ -1,10 +1,11 @@
-
+  
 
 
 .thumb1{
   width: 100%;
   margin-top: 10px;
   cursor: pointer;
+  /* background-color: red; */
 }
 
 .video-title{
@@ -22,23 +23,87 @@
 }
 .video-author{
   margin-bottom: 4px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .video-grid{
+  font-family: Roboto,arial;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+  /* text-decoration: underline; */
+  /* border: 2px solid red; */
 }
+
+  @media (max-width: 750px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 751px) and (min-width: 999px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+
+  @media (min-width: 1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
 
 .channel-picture{
   width: 36px;
   height: 36px;
-  border-radius: 18.5px;
+  border-radius: 50%;
   display: block;
   cursor: pointer;
 }
+
+.channel-picture:hover + .hover-chanel-pic-main {
+  opacity: 1;
+}
+.hover-chanel-pic-main{
+  display: flex;
+  align-items: center;
+  width: 265px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 12px;
+  z-index: 200;
+  opacity: 0;
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+  transition: opacity 0.25s;
+}
+
+.hover-details{
+  /* opacity: 0; */
+  display: grid;
+  flex-direction: row;
+  font-family: Roboto, arial, sans-serif;
+}
+.hover-name{
+  font-size: 17px;
+  font-weight: bold;
+}
+.hover-subs{
+  font-size: 16px;
+  color: gray;
+}
+
+
+.hover-picture{
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 20px;
+}
+
 
 .video-info-grid{
   display: grid;
@@ -46,10 +111,48 @@
 }
 
 .profile{
-  margin-top: 12px;
+  margin-top: 8px;
+  width: 40px;
+  z-index: 1;
 }
 
-.div-title{
-  margin-top: 12px;
+.video-time{
+  font-weight: 500px;
+  font-size: 12px;
+  position: absolute;
+  color: white;
+  background-color: black;
+  border-radius: 2px;
+  bottom: 7px;
+  right: 4px;
+  padding: 4px;
+  }
+
+.video-info{
+  margin-top: 8px;
 }
 
+.video-thumb{
+  position: relative;
+}
+
+.notifications-icon-container{
+  position: relative;
+}
+
+.notifications-count{
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  font-family: Roboto, arial;
+  font-weight: 500px;
+  background-color: rgb(204, 0, 0);
+  border-radius: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  top: -3px;
+  right: -7px;
+  border: 2px solid white;
+}
