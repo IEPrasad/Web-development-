@@ -31,6 +31,35 @@
 
 
 .sidebar-link div{
-  font-family: Roboto, arial, sans-serif;
   font-size: 10px;
+}
+@media (min-width: 1200px){
+  .sidebar-link div{
+    font-size: 14px;
+  }
+  .sidebar{
+    width: 154px;
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+
+  }
+  .sidebar-link{
+    width: 150px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 10px;
+    padding-left: 4px;
+  }
+  .sidebar-link div{
+    font-size: 14px;
+  }
+  .sidebar img{
+    margin-right: 12px;
+    margin-top: 5px;
+  }
+  body{
+    padding-left: 210px;
+  }
 }
