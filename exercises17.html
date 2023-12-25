@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgba(50,50,50, 0.6);
+      padding-left: 110px;
+    }
+    .sidebar{
+      width: 100px;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      align-items: center;
+      /* border: 2px solid gray; */
+    }
+    .main{
+      margin-top: 20px;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid black; */
+      align-items: center;
+    }
+    .main:hover{
+      cursor: pointer;
+      background-color: lightpink;
+    }
+    .image{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .name{
+      margin-top: 20px;
+    }
+
+    @media (min-width: 1000px){
+      .sidebar{
+        width: 200px;
+        display: block;
+        padding: 20px;
+      }
+      .main{
+        width: 200px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        padding: 6px 8px;
+      }
+      .name{
+        margin: 0;
+        margin-left: 20px;
+      }
+      body{
+        padding-left: 250px;
+      }
+    }
+    .a{
+      background-color: red;
+    }
+    
+  </style>
+
+</head>
+<body>
+  <div class="sidebar">
+    <div class="main">
+      <img class="image" src="Profile-pictures/my-channel.jpeg" alt="">
+      <div class="name">home</div>
+    </div>
+
+    <div class="main">
+      <img class="image" src="Profile-pictures/my-channel.jpeg" alt="">
+      <div class="name">Notifications</div>
+    </div>
+
+    <div class="main">
+      <img class="image" src="Profile-pictures/my-channel.jpeg" alt="">
+      <div class="name">music</div>
+    </div>
+
+    <div class="main">
+      <img class="image" src="Profile-pictures/my-channel.jpeg" alt="">
+      <div class="name">name</div>
+    </div>
+
+    <div class="main">
+      <img class="image" src="Profile-pictures/my-channel.jpeg" alt="">
+      <div class="name">name</div>
+    </div>
+
+
+  </div>
+    <div class="a">check this zoom in and out</div>
+  
+  
+</body>
+</html>
