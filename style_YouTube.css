@@ -1,11 +1,9 @@
-  
-
 
 .thumb1{
   width: 100%;
   margin-top: 10px;
   cursor: pointer;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .video-title{
@@ -27,11 +25,50 @@
 }
 
 .video-grid{
+  font-family: Roboto,arial;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+  /* text-decoration: underline; */
+  /* border: 2px solid red; */
 }
+
+  @media (max-width: 750px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr;
+    }
+
+  }
+
+  @media (max-width: 751px) and (min-width: 999px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sidebar-link div{
+      font-size: 10px;
+    }
+  }
+
+
+  @media (min-width: 1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .video-title{
+      font-size: 16px;
+    }
+    .video-author,
+    .video-stats,
+    .video-time,
+    .tooltip,
+    .header{
+      font-size: 14px;
+      line-height: 22px;
+    }
+    
+  }
+
 
 .channel-picture{
   width: 36px;
@@ -94,7 +131,6 @@
 }
 
 .video-time{
-  font-family: Roboto,arial;
   font-weight: 500px;
   font-size: 12px;
   position: absolute;
@@ -106,7 +142,7 @@
   padding: 4px;
   }
 
-.div-title{
+.video-info{
   margin-top: 8px;
 }
 
@@ -114,23 +150,3 @@
   position: relative;
 }
 
-.notifications-icon-container{
-  position: relative;
-}
-
-.notifications-count{
-  position: absolute;
-  color: white;
-  font-size: 10px;
-  font-family: Roboto, arial;
-  font-weight: 500px;
-  background-color: rgb(204, 0, 0);
-  border-radius: 10px;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  top: -3px;
-  right: -7px;
-  border: 2px solid white;
-}
