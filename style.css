@@ -1,49 +1,102 @@
+*{
+  font-family: 'Lato', sans-serif;
+
+}
 body {
-  background-image: linear-gradient(to bottom, #751345, #983148, #b5524a, #cc764e, #dc9c58, #e8a35f, #f3aa65, #ffb16c, #ff9978, #ff8391, #ff75b2, #e474d4);
-  padding-top: 100px;
+  background-color: rgb(5, 2, 43);
   padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background: rgba(0, 5, 5, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  /* background: rgba(61, 127, 188, 0.6); */
+  position: relative;
   height: 75px;
 }
-
+.topic-main {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: rgb(116, 80, 17);
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  letter-spacing: 12px;
+}
 
 .content-1 {
-  height: 300px;
-  width: 600px;
+  flex: 1;
+  height: auto;
+  width: 70%;
   border: none;
   border-radius: 6px;
-  /* background-color: rgba(227, 234, 227, 0.4); */
-  background: rgba(23, 45, 44, 0.8);
-  margin: 40px;
+  background-color: rgb(11, 38, 87);
+  margin: auto;
+  margin-top: 20px;
   padding: 10px 12px;
   box-shadow: 4px 4px 20px rgba(69, 98, 225, 0.2);
   transition: background-color 0s;
   }
 .content-1:hover{
-  box-shadow: 4px 4px 20px rgba(217, 236, 235, 0.3);
+  box-shadow: 0px 0px 20px rgba(217, 236, 235, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.6)
 }
 
 .content-2 {
-  height: 200px;
-  width: 400px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 90%;
   border: none;
   border-radius: 6px;
-  background-color: rgba(249, 251, 251, 0.8);
-  /* background-color: transparent; */
-  margin: 40px;
-  padding: 10px 12px;
-
+  background-color:rgba(52, 54, 99, 0.4);
+  /* box-shadow: 0px 0px 5px white; */
+  margin: auto;
+  margin-top: 75px;
+  margin-bottom: 40px;
+  padding-right: 0px;
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
 }
-.a {
+.content-2:hover {
+  border: 1px solid rgba(255, 255, 255, 0.6)
+}
+.four {
+  position: relative;
+  width: 25%;
+  /* border: 2px solid rgba(12, 16, 134, 0.4); */
+  margin: auto;
+  margin-left: 12px;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 52px;
+  padding-left: 10px;
+}
+.content-2 .four .time {
+  color: rgb(32, 146, 192);
+  font-size: 14px;
+  margin-bottom: 20px;
+  letter-spacing: 1.2px;
+}
+.tense {
+  position: absolute;  
+  font: bold 20px Lobster;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.2);
+  top: -10%;
+  left: 20%;
+  color: rgba(52, 221, 201, 0.8);
+  letter-spacing: 6px;
+  transform: rotate(350deg);
+  z-index: 6;
+  width: 100px;
+  text-decoration: underline;
+}
+
+.tense-name {
   margin: 12px 12px;
-  color: white;
+  color: rgb(227, 193, 91);
   font-family: sans-serif;
   text-transform: uppercase;
   font-weight: bold;
