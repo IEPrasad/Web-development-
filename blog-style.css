@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  padding-bottom: 200px;
+  background-color: white;
+}
+.container {
+  width: 100%;
+}
+.container .row {
+  width: 80%;
+  margin: auto;
+}
+.container .row .header {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.container .row .header h1 {
+  padding-top: 30px;
+  font-size: 45px;
+  color: #e19c30;
+}
+.container .row .header p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #6e6e6e  ;
+}
+.content {
+  display:flex;
+  align-items: top;
+  justify-content: center;
+  margin: auto;
+}
+.content .card {
+  flex: 1;
+  margin: 50px 20px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  background-color: #fff;
+}
+.content .card img {
+  width: 100%;
+  height: auto;
+}
+
+.content .card h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content .card p{
+  font-size: 15px;
+  color: #6e6e6e;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px){
+  .content{
+    flex-direction: column;
+  }
+}
+
+.list {
+  margin-bottom: 30px;
+}
+li:hover {
+  font: 18px;
+  display: inline-block;
+  padding:1px 4px;
+  background-color: rgba(0,0,0,0.2);
+}
+h2 {
+  margin: 20px;
+}
+table {
+  margin: 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+thead{
+  background-color: lightpink;
+}
+.th1 {
+  width: 200px;
+}
+.th2 {
+  width: 600px;
+}
+
+td {
+  background-color: lightblue;
+  padding: 12px ;
+}
+.td1 {
+  color: green;
+  background-color: rgb(213, 213, 186);
+}
+th{
+  padding: 6px 12px;
+}
+.card :hover {
+  background-color: rgba(0,0,0,0.2);
+}
+table:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+.input {
+  padding-left: 8px;
+  height: 35px;
+  width: 500px;
+  margin-left: 30px;
+}
+.p1,.p2 {
+  margin-bottom: 20px
+}
+button{
+  margin: 30px;
+  background-color: rgb(164, 105, 16);
+  height: 40px;
+  width: 130px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.15s;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+button:active {
+  opacity: 0.5;
+}
+.entry-field {
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 20px;
+  padding-right: 30px;
+  display: inline-block;
+  margin-left: 200px;
+}
+.register {
+  color: white;
+  font-size: 25px;
+  margin: 12px 10px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  background-color: transparent;
+  color: gray;
+}
