@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS subscribe button</title>
+  <style>
+    body {
+      background-color: rgba(40, 40, 140, 0.7);
+    }
+    .subscribe-button {
+      font-size: 15px;
+      font-family: arial;
+      font-weight: bold;
+      color: white;
+      background-color: rgb(171, 41, 41);
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 20px 50px;
+    }
+
+    .is-subscribed {
+      background-color: rgb(25, 25, 25);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="
+    subscribe(); 
+  " class="js-subscribe-button subscribe-button"
+  >SUBSCRIBE</button>
+
+  <script>
+    const subscribeElement = document.querySelector('.js-subscribe-button');
+
+    function subscribe() {
+      if (subscribeElement.innerText === 'SUBSCRIBE') {
+        subscribeElement.innerText = 'SUBSCRIBED';
+        subscribeElement.classList.add('is-subscribed')
+      } else {
+        subscribeElement.innerText = 'SUBSCRIBE';
+        subscribeElement.classList.remove('is-subscribed')
+      }
+    }
+  </script>
+</body>
+</html>
