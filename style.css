@@ -98,8 +98,16 @@ header {
   margin: 12px 12px;
   color: rgb(227, 193, 91);
   font-family: sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
   font-size: 16px;
 }
 
+.js-tense {
+  background-color: rgb(130, 205, 234);
+  color: black;
+  border-radius: 5px;
+  height: 90px;
+  width: 100%;
+  margin: auto;
+}
