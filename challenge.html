@@ -5,16 +5,27 @@
   <style>
     body{
       margin: 40px;
+      padding-bottom: 1000px;
     }
-    .main {
+    .main{
       position: relative;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       vertical-align: top;
-      /* border: 1px solid black; */
       padding: 0;
+    }
+    .lines{
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      vertical-align: top;
+      padding: 0;
+      left: 190px;
+      top: 0px;
     }
     .a ,.b,.c{
       position: relative;
@@ -67,9 +78,11 @@
     <div class="f"></div>
     <div class="g"></div>
 
-    <div class="a"></div>
-    <div class="b"></div>
-    <div class="c"></div>
+    <div class="lines">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>      
+    </div>
   </div>
   
 </body>
