@@ -1,82 +1,76 @@
-
-<!-- 1- Challenge Exercise  -->
-<!-- 2f. Continuning from exercise 1g. recreate this design using CSS:
-challenge.png -->
-
-<br/>
-<br/>
-<br/>
-<br/>
-<style>
-    .Back_to_Amazon{
-        text-decoration: underline;
-        color: rgb(0, 113, 120);
-        font-size: 17px;
-        /* font-weight: bold; */
-        /* text-underline-offset: 3px; */
-        /* border-bottom: 2px solid blue; */
-        /* padding-bottom: 4px; */
-        cursor: pointer;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Challenge-1</title>
+  <style>
+    body{
+      margin: 40px;
     }
-    .nike{
-        font-size: 30px;
-        color:blck;
-        font-weight: bold;
+    .main {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      vertical-align: top;
+      /* border: 1px solid black; */
+      padding: 0;
     }
-    .instock{
-        color:  rgb(0, 118, 0);
-        font-size: 24px;
-        font-weight: bold;
-        cursor: pointer; 
-
+    .a ,.b,.c{
+      position: relative;
+      height: 200px;
+      width: 2px;
+      background-color: black;
     }
-
-    .dilivery{
-        color: black;
-        font-size: 23px;
-        cursor: pointer; 
-
+    .d, .e, .f, .g {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: aqua;
+      position: absolute;
+    } 
+    .d {
+      left: 182px;
+      top: 130px;
     }
-    .button1{
-        font-size: 17;
-        color: black;
-        background-color: rgb(255,216,20);
-        height: 36px;
-        width: 130px;
-        border-radius: 18px;
-        margin-right: 13px;
-        border: none;
-        font-family: sans-serif;
-        cursor: pointer; 
-
+    .e {
+      left: 250px;
+      top: 130px;
     }
-    .button2{
-        background-color:rgb(255,164,28);
-        height:36px;
-        width:130px;
-        border: none;
-        border-radius: 18px;
-        font-size: 17px;
-        font-family: sans-serif;
-        cursor: pointer; 
-
+    .f {
+      left: 142px;
+      top: 200px;
+    }
+    .g {
+      left: 290px;
+      top: 200px
     }
 
-</style>
+    .a {
+      transform: rotate(30deg);
+    }
+    .b {
+      transform: rotate(150deg);
+      margin-left: 100px;
+    }
+    .c {
+      margin-top: 174px;
+      transform: rotate(90deg);
+      margin-left: -53px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+    <div class="g"></div>
 
-
-
-<h3><a class="Back_to_Amazon" href="https://www.amazon.com">Back to Amazon</a></h3>
-<p class="nike">Nike Black Running Shoes</p>
-<p class="instock">$39 - in stock.</p>
-<p class="dilivery">Free delivery tomorrow.</p>
-
-<button class="button1">
-    Add to cart 
-</button>
-
-<button class="button2">
-    Buy now
-</button>
-
-<!-- --------- challenge 1 is complete ------------------------- -->
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+  </div>
+  
+</body>
+</html>
