@@ -1,113 +1,368 @@
-*{
-  font-family: 'Lato', sans-serif;
-
-}
 body {
-  background-color: rgb(5, 2, 43);
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
+    background-color: #e3d9e1; 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;  
 }
 
-header {
-  /* background: rgba(61, 127, 188, 0.6); */
-  position: relative;
-  height: 75px;
+.heading {
+  font-family: 'Arial', sans-serif; 
+  font-size: 36px; 
+  color: #333; 
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+  line-height: 1.5; 
+  margin-bottom: 20px; 
+  text-align: center;
 }
-.topic-main {
-  font-family: 'Lato', sans-serif;
+p {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 0px;
+  text-decoration: underline;
+}
+.div-1 { 
+  position: relative;  ;
+  width: 100%;
+  height: 100%;
+  margin-left: 30px;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+}
+.a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(248, 248, 248);
+  top: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #1339d0;
+  opacity: 0;
+}
+.a:hover {
+  opacity: 0.3;
+
+}
+.welcome {
+  position: absolute;
+  top: 70%;
+  left: 60px;
+  right: 0px;
+  bottom: 30%;
+  font-family: sans-serif;
   font-weight: bold;
-  color: rgb(116, 80, 17);
-  font-size: 35px;
+  font-size: 4em;
+  opacity: 0.5;
+  z-index: 10;
+}
+.welcome:hover {
+  opacity: 0.7;
+}
+
+.div-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid black; */
+  margin-left: 12px;
+}
+
+.nested-1-2 {
+  display: flex;
+  padding: 12px;
+  /* border: 2px solid black; */
+  vertical-align: top;
+}
+
+
+/* style list */
+
+.main-1{
+  font-family: sans-serif;
+  font-size: 18px;
+  color: rgb(81, 15, 213);
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+}
+
+li {
+  font-family: Arial;
+  font-size: 15px;
+  color: rgb(128, 0, 45);
+}
+li:hover {
+  padding: 4px;
+  background-color: rgb(107, 200, 207);
+  display: inline-block;
+  cursor: pointer;
+}
+li:active {
+  opacity: 0.4;
+}
+
+.div-3 {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 5px;
+  margin: 12px 15px;
+  width: auto;
+  height: auto;
+}
+
+/* Style table */
+
+table {
+  padding: 12px;
+  margin: 20px;
+}
+
+th {
+  padding: 12px;
+  font-size: 17px;
+  color: rgb(212, 86, 212);
+  font-family: arial;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.6)
+}
+.first-row{
+  background-color: black;
+  border-radius: 4px;
+  padding-bottom: 20px;
+}
+
+tbody {
+  background-color: rgb(146, 146, 199);
+}
+td {
+  color: rgb(1, 1, 0);
+  font-family: sans-serif;
+  padding: 6px 12px;
+}
+
+p {
+  background-color: rgb(5, 31, 25);
+  margin-top: 100px;
+  color: #6fb38c;
+  padding: 20px;
+  font-size: 22px;
+  display: inline-block;
+  margin-left: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+
+.button {
+  color: white;
+  font-size: 18px;
+  padding: 6px 8px;
+  background-color: rgb(172, 26, 26);
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+.button:hover {
+  background-color: rgb(101, 7, 7);
+  color: rgb(227, 201, 201);
+  cursor: pointer;
+}
+.button:active {
+  opacity: 0.5;
+}
+
+.back {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.back-button {
+  background-color: rgb(34, 63, 178);
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+}
+a {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  text-decoration: none;
+}
+
+.back-button {
+  background-color: rgb(9, 14, 34);
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: all 0.3s ease-in-out; /* Add animation transition */
+}
+
+.btns {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  letter-spacing: 12px;
-}
-
-.content-1 {
-  flex: 1;
-  height: auto;
-  width: 70%;
-  border: none;
-  border-radius: 6px;
-  background-color: rgb(11, 38, 87);
-  margin: auto;
-  margin-top: 20px;
-  padding: 10px 12px;
-  box-shadow: 4px 4px 20px rgba(69, 98, 225, 0.2);
-  transition: background-color 0s;
-  }
-.content-1:hover{
-  box-shadow: 0px 0px 20px rgba(217, 236, 235, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.6)
-}
-
-.content-2 {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  width: 90%;
-  border: none;
-  border-radius: 6px;
-  background-color:rgba(52, 54, 99, 0.4);
-  /* box-shadow: 0px 0px 5px white; */
-  margin: auto;
-  margin-top: 75px;
-  margin-bottom: 40px;
-  padding-right: 0px;
-  border: 0.5px solid rgba(255, 255, 255, 0.4);
-}
-.content-2:hover {
-  border: 1px solid rgba(255, 255, 255, 0.6)
-}
-.four {
-  position: relative;
-  width: 25%;
-  /* border: 2px solid rgba(12, 16, 134, 0.4); */
-  margin: auto;
-  margin-left: 12px;
-  margin-top: -20px;
-  display: flex;
   flex-direction: column;
-  padding-top: 52px;
-  padding-left: 10px;
-}
-.content-2 .four .time {
-  color: rgb(32, 146, 192);
-  font-size: 14px;
-  margin-bottom: 20px;
-  letter-spacing: 1.2px;
-}
-.tense {
-  position: absolute;  
-  font: bold 20px Lobster;
-  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.2);
-  top: -10%;
-  left: 20%;
-  color: rgba(52, 221, 201, 0.8);
-  letter-spacing: 6px;
-  transform: rotate(350deg);
-  z-index: 6;
-  width: 100px;
-  text-decoration: underline;
+  gap: 35px;
 }
 
-.tense-name {
-  margin: 12px 12px;
-  color: rgb(227, 193, 91);
-  font-family: sans-serif;
-  /* text-transform: uppercase; */
-  font-weight: bold;
-  font-size: 16px;
+.button {
+  margin: 10px;
+  padding: 20px 70px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #000;
+  z-index: 0;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.js-tense {
-  background-color: rgb(130, 205, 234);
+button:first-child {
+  border: 2px solid #42eb0f;
+  color: #42eb0f;
+  box-shadow: 0 0 20px 0 #42eb0f;
+}
+
+button:nth-child(2) {
+  border: 2px solid #eb0feb;
+  color: #eb0feb;
+  box-shadow: 0 0 20px 0 #eb0feb;
+}
+
+button:last-child {
+  border: 2px solid #3a6161;
+  color: #00ffff;
+  box-shadow: 0 0 20px 0 #0055ff;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  transition: 0.5s;
+  background: #000;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:first-child::before {
+  border: 2px solid #42eb0f;
+}
+
+button:nth-child(2)::before {
+  border: 2px solid #eb0feb;
+}
+
+button:last-child::before {
+  border: 2px solid #00ffff;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background: #000;
+  z-index: -1;
+}
+
+button:first-child::after {
+  border: 2px solid #42eb0f;
+}
+
+button:nth-child(2)::after {
+  border: 2px solid #eb0feb;
+}
+
+button:last-child::after {
+  border: 2px solid #00ffff;
+}
+
+button:hover::before {
+  left: calc(100% - 5px)
+}
+
+button:hover::after {
+  right: calc(100% - 5px)
+}
+
+button:hover {
+  color: #000;
+}
+
+button:first-child:hover {
+  background: #42eb0f;
+  box-shadow: 0 0 60px 0 #42eb0f;
+}
+
+button:nth-child(2):hover {
+  background: #eb0feb;
+  box-shadow: 0 0 60px 0 #eb0feb;
+}
+
+button:last-child:hover {
+  background: #b70f28;
   color: black;
-  border-radius: 5px;
-  height: 90px;
-  width: 100%;
-  margin: auto;
+  box-shadow: 0 0 60px 0 #0bb6b688;
+}
+
+/* Add animation for hover effect */
+.btns button:hover::before {
+  animation: moveBefore 0.5s forwards;
+}
+
+.btns button:hover::after {
+  animation: moveAfter 0.5s forwards;
+}
+
+/* Keyframes for animation */
+@keyframes moveBefore {
+  from {
+    left: -5px;
+  }
+  to {
+    left: calc(100% - 5px);
+  }
+}
+
+@keyframes moveAfter {
+  from {
+    right: -5px;
+  }
+  to {
+    right: calc(100% - 5px);
+  }
+}
+.subscribe-button {
+  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(171, 41, 41);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px 50px;
+}
+
+.is-subscribed {
+  background-color: rgb(25, 25, 25);
 }
