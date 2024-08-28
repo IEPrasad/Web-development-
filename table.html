@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-collapse table</title>
+    <style>
+      .table1 td {
+        border: 1ps solid black;
+        /* border-spacisuru@123
+        ing: 12px; */
+      }
+
+      .table2,tr, th, td {
+        border: 1px solid blue;
+        border-collapse: collapse;
+      }
+      
+
+      .table3 {
+        border-spacing: 12px;
+      }
+      .table3 tr th , .table3 tr td{
+        border-color: black;
+      }
+
+      body {
+        margin: 40px;
+      }
+      
+    </style> 
+</head>
+<body>
+    <h3>Table without border collapse</h3>
+    <table border="1" class="table1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>School</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>Isuru</td>
+            <td>22</td>
+            <td>KMV</td>
+            <td>7721718</td>
+        </tr>
+        <tr>
+            <td>Eranda</td>
+            <td>32</td>
+            <td>RCM</td>
+            <td>772123</td>
+        </tr>
+        <tr>
+            <td>Hasindu</td>
+            <td>22</td>
+            <td>RCM</td>
+            <td>1481212</td>
+        </tr>
+    </table>    
+        
+    
+    <h3>Table with border collapase</h3>
+    <table border="1" class="table2">
+      <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>School</th>
+          <th>Phone</th>
+      </tr>
+      <tr>
+          <td>Isuru</td>
+          <td>22</td>
+          <td>KMV</td>
+          <td>7721718</td>
+      </tr>
+      <tr>
+          <td>Eranda</td>
+          <td>32</td>
+          <td>RCM</td>
+          <td>772123</td>
+      </tr>
+      <tr>
+          <td>Hasindu</td>
+          <td>22</td>
+          <td>RCM</td>
+          <td>1481212</td>
+      </tr>
+    </table>    
+  
+
+
+    <h3>Table with border space </h3>
+
+    <table border="1" class="table3">
+      <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>School</th>
+          <th>Phone</th>
+      </tr>
+      <tr>
+          <td>Isuru</td>
+          <td>22</td>
+          <td>KMV</td>
+          <td>7721718</td>
+      </tr>
+      <tr>
+          <td>Eranda</td>
+          <td>32</td>
+          <td>RCM</td>
+          <td>772123</td>
+      </tr>
+      <tr>
+          <td>Hasindu</td>
+          <td>22</td>
+          <td>RCM</td>
+          <td>1481212</td>
+      </tr>
+    </table>    
+  
+
+</body>
+</html>             
