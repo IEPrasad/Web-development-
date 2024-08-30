@@ -3,31 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Todo List</title>
+    <title>Professional Todo List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-theme">
     <div class="container">
-        <h1>Advanced Todo List</h1>
-        <div id="current-datetime"></div>
-        <form id="todo-form">
-            <input type="text" id="todo-input" placeholder="Enter a new task" required>
-            <select id="priority-select">
-                <option value="urgent">Urgent</option>
-                <option value="very-high">Very High</option>
-                <option value="high">High</option>
-                <option value="normal" selected>Normal</option>
-                <option value="low">Low</option>
-            </select>
-            <input type="datetime-local" id="deadline-input" required>
-            <button type="submit">Add Task</button>
-        </form>
-        <div id="task-stats">
-            <span>Total Tasks: <span id="total-tasks">0</span></span>
-            <span>Completed Tasks: <span id="completed-tasks">0</span></span>
-            <span>Completion Rate: <span id="completion-rate">0%</span></span>
-        </div>
-        <ul id="todo-list"></ul>
+        <header>
+            <h1>Professional Todo List</h1>
+            <div id="current-datetime" class="current-time"></div>
+        </header>
+        <main>
+            <section id="task-form-section">
+                <form id="todo-form">
+                    <input type="text" id="todo-input" placeholder="Enter a new task" required>
+                    <select id="priority-select">
+                        <option value="urgent">Urgent</option>
+                        <option value="very-high">Very High</option>
+                        <option value="high">High</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="low">Low</option>
+                    </select>
+                    <div class="date-time-inputs">
+                        <label for="start-datetime">Start Date/Time:</label>
+                        <input type="datetime-local" id="start-datetime" required>
+                    </div>
+                    <div class="date-time-inputs">
+                        <label for="end-datetime">End Date/Time:</label>
+                        <input type="datetime-local" id="end-datetime" required>
+                    </div>
+                    <button type="submit">Add Task</button>
+                </form>
+            </section>
+            <section id="task-stats-section">
+                <div id="task-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Tasks:</span>
+                        <span id="total-tasks" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Completed Tasks:</span>
+                        <span id="completed-tasks" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Completion Rate:</span>
+                        <span id="completion-rate" class="stat-value">0%</span>
+                    </div>
+                </div>
+            </section>
+            <section id="task-list-section">
+                <ul id="todo-list"></ul>
+            </section>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
