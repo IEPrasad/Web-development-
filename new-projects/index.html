@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Todo List</h1>
+        <div id="current-datetime"></div>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Enter a new task" required>
+            <select id="priority-select">
+                <option value="urgent">Urgent</option>
+                <option value="very-high">Very High</option>
+                <option value="high">High</option>
+                <option value="normal" selected>Normal</option>
+                <option value="low">Low</option>
+            </select>
+            <input type="datetime-local" id="deadline-input" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <div id="task-stats">
+            <span>Total Tasks: <span id="total-tasks">0</span></span>
+            <span>Completed Tasks: <span id="completed-tasks">0</span></span>
+            <span>Completion Rate: <span id="completion-rate">0%</span></span>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
