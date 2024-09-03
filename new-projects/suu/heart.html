@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Heart with Stars and Message</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 85%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #05051d;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 40vw;
+            height: 40vh;
+        }
+        .heart {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ff3366;
+            transform: rotate(-45deg);
+            animation: pulse 1.5s ease infinite, colorChange 8s linear infinite;
+        }
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ff3366;
+            border-radius: 50%;
+            animation: colorChange 8s linear infinite;
+        }
+        .heart::before {
+            top: -50%;
+            left: 0;
+        }
+        .heart::after {
+            top: 0;
+            right: -50%;
+        }
+        @keyframes pulse {
+            0% { transform: rotate(-45deg) scale(1); }
+            50% { transform: rotate(-45deg) scale(1.1); }
+            100% { transform: rotate(-45deg) scale(1); }
+        }
+        @keyframes colorChange {
+            0%, 100% { background-color: #ff3366; }
+            50% { background-color: #ff66b2; }
+        }
+        .message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff;
+            font-size: 2vmin;
+            line-height: 1.5;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+        .star {
+            position: fixed;
+            background-color: #ffffff;
+            border-radius: 50%;
+            animation: twinkle 1s infinite alternate;
+        }
+        @keyframes twinkle {
+            from { opacity: 1; }
+            to { opacity: 0.2; }
+        }
+        .curved-text {
+            position: absolute;
+            top: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100px;
+        }
+        .curved-text h2 {
+            font-size: 4vmin;
+            color: #ff66b2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .curved-text h2 span {
+            display: inline-block;
+            animation: wavyText 2s ease-in-out infinite;
+        }
+        @keyframes wavyText {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .footer-message {
+            position: absolute;
+            bottom: -25%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3vmin;
+            color: #ff9999;
+            text-align: center;
+            width: 100%;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            animation: glow 2s ease-in-out infinite;
+        }
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 5px #ff9999, 0 0 10px #ff9999, 0 0 15px #ff9999; }
+            50% { text-shadow: 0 0 10px #ff9999, 0 0 20px #ff9999, 0 0 30px #ff9999; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart"></div>
+        <div class="curved-text">
+            <h2>
+                <span>S</span><span>u</span><span>u</span> 
+                <span>p</span><span>a</span><span>n</span><span>c</span><span>h</span><span>i</span><span>e</span><span>e</span><span>e</span>
+            </h2>
+        </div>
+        <div class="message">
+            Some days, it's really really hard to live without you...<br>
+            I feel lonely... I feel I'm faded... without you...<br>
+            I don't know how to spend this hard time....<br>
+            You also are not in a good state of mind...<br>
+            You're still recovering...<br><br>
+            I want to take care of you without tears falling from your eyes.<br>
+            But this time is very difficult. I don't understand what to do.<br>
+            I don't want you to be hurt by me.<br>
+            I want a beautiful love that can understand me.<br>
+            I miss you so much.
+        </div>
+        <div class="footer-message">You are my life... Love you forever panchi...</div>
+        
+    </div>
+
+    <script>
+        function createStars() {
+            const body = document.body;
+            const starCount = 200; // Increased number of stars
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Randomize star properties
+                const size = Math.random() * 3 + 1 + 'px';
+                star.style.width = size;
+                star.style.height = size;
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDuration = Math.random() * 3 + 1 + 's';
+                star.style.animationDelay = Math.random() * 2 + 's';
+
+                body.appendChild(star);
+            }
+        }
+
+        createStars();
+    </script>
+</body>
+</html>
