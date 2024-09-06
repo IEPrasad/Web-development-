@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Vue.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+  <title>Vue.js Comment Box</title>
+</head>
+<body>
+  <div id="app">
+    <h2>Comment Box</h2>
+    <textarea v-model="newComment" placeholder="Write a comment..."></textarea>
+    <button @click="addComment">Add Comment</button>
+
+    <h3>All Comments</h3>
+    <ul>
+      <li v-for="comment in comments" :key="comment">{{ comment }}</li>
+    </ul>
+
+  </div>
+
+  <!-- Vue.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+  <!-- Vue.js Script -->
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        newComment: "", // To store new comment
+        comments: [] // Array to hold comments
+      },
+      methods: {
+        addComment() {
+          if (this.newComment.trim() !== '') {
+            this.comments.push(this.newComment); // Add comment to list 
+            this.newComment = ''; // Clear input box
+          }
+        }
+      }
+    })
+  </script>
+</body>
+</html>
