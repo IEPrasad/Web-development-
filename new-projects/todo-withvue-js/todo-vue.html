@@ -27,7 +27,7 @@
                     </select>
                     <div class="date-time-inputs">
                         <label for="start-datetime">Start Date/Time:</label>
-                        <input type="datetime-local" id="start-datetime" :value="currentDateTimeInput" required readonly>
+                        <input type="datetime-local" id="start-datetime" v-model="newTask.startDateTime" required>
                     </div>
                     <div class="date-time-inputs">
                         <label for="end-datetime">End Date/Time:</label>
@@ -54,11 +54,11 @@
             </section>
             <section id="task-list-section">
                 <ul id="todo-list">
-                    <li v-for="todo in todos" 
-                        :key="todo.id" 
+                    <li v-for="(todo, index) in todos" 
+                        :key="index" 
                         :class="['todo-item', { done: todo.status === 'done' }]" 
                         :data-priority="todo.priority">
-                        <div class="task-info">
+                        <div v-if="!todo.isEditing" class="task-info">
                             <div class="task-text">{{ todo.text }}</div>
                             <div class="task-priority">{{ todo.priority }}</div>
                             <div class="task-deadline">Start: {{ formatDate(todo.startDateTime) }}</div>
@@ -68,7 +68,21 @@
                                 <div class="task-progress-bar" :style="{ width: todo.progress + '%' }"></div>
                             </div>
                         </div>
+                        <div v-else class="edit-form">
+                            <input type="text" v-model="todo.text" placeholder="Task text">
+                            <select v-model="todo.priority">
+                                <option value="urgent">Urgent</option>
+                                <option value="very-high">Very High</option>
+                                <option value="high">High</option>
+                                <option value="normal">Normal</option>
+                                <option value="low">Low</option>
+                            </select>
+                            <input type="datetime-local" v-model="todo.startDateTime">
+                            <input type="datetime-local" v-model="todo.endDateTime">
+                        </div>
                         <div class="task-actions">
+                            <!-- <button v-if="!todo.isEditing" @click="editTask(todo)">Edit</button> -->
+                            <button v-else @click="saveEdit(todo)">Save</button>
                             <button @click="toggleStatus(todo)">{{ todo.status === 'done' ? 'Undo' : 'Done' }}</button>
                             <button @click="deleteTask(todo)">Delete</button>
                             <input type="number" min="0" max="100" v-model="todo.progress" @change="saveTodos">
