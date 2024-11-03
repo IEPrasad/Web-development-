@@ -1,11 +1,14 @@
 :root {
+  /* Priority Colors */
+  --urgent-color: #ff4444;
+  --very-high-color: #ff8800;
+  --high-color: #ffbb33;
+  --normal-color: #00c851;
+  --low-color: #33b5e5;
+  
+  /* Theme Colors */
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
-  --urgent-color: #e74c3c;
-  --very-high-color: #c0392b;
-  --high-color: #e67e22;
-  --normal-color: #3498db;
-  --low-color: #95a5a6;
   --background-color: #2c3e50;
   --text-color: #ecf0f1;
   --card-background: #34495e;
@@ -113,7 +116,33 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Priority-based background colors */
+.todo-item[data-priority="urgent"] {
+  background-color: rgba(255, 68, 68, 0.15);
+  border-left: 4px solid var(--urgent-color);
+}
+
+.todo-item[data-priority="very-high"] {
+  background-color: rgba(255, 136, 0, 0.15);
+  border-left: 4px solid var(--very-high-color);
+}
+
+.todo-item[data-priority="high"] {
+  background-color: rgba(255, 187, 51, 0.15);
+  border-left: 4px solid var(--high-color);
+}
+
+.todo-item[data-priority="normal"] {
+  background-color: rgba(0, 200, 81, 0.15);
+  border-left: 4px solid var(--normal-color);
+}
+
+.todo-item[data-priority="low"] {
+  background-color: rgba(51, 181, 229, 0.15);
+  border-left: 4px solid var(--low-color);
 }
 
 .todo-item .task-info {
@@ -123,17 +152,49 @@ button:hover {
 .todo-item .task-actions {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .todo-item .task-text {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  color: var(--text-color);
 }
 
 .todo-item .task-priority {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Priority label colors */
+.todo-item[data-priority="urgent"] .task-priority {
+  background-color: var(--urgent-color);
+  color: white;
+}
+
+.todo-item[data-priority="very-high"] .task-priority {
+  background-color: var(--very-high-color);
+  color: white;
+}
+
+.todo-item[data-priority="high"] .task-priority {
+  background-color: var(--high-color);
+  color: black;
+}
+
+.todo-item[data-priority="normal"] .task-priority {
+  background-color: var(--normal-color);
+  color: white;
+}
+
+.todo-item[data-priority="low"] .task-priority {
+  background-color: var(--low-color);
+  color: white;
 }
 
 .todo-item .task-deadline,
@@ -141,6 +202,7 @@ button:hover {
 .todo-item .timer {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.3rem;
 }
 
 .todo-item .task-progress {
@@ -158,37 +220,28 @@ button:hover {
   transition: width 0.3s ease;
 }
 
-.todo-item[data-priority="urgent"] { border-left: 4px solid var(--urgent-color); }
-.todo-item[data-priority="very-high"] { border-left: 4px solid var(--very-high-color); }
-.todo-item[data-priority="high"] { border-left: 4px solid var(--high-color); }
-.todo-item[data-priority="normal"] { border-left: 4px solid var(--normal-color); }
-.todo-item[data-priority="low"] { border-left: 4px solid var(--low-color); }
-
-.todo-item[data-status="done"] {
-  opacity: 0.6;
+.todo-item.done {
+  opacity: 0.7;
 }
 
-.todo-item[data-status="done"] .task-text {
+.todo-item.done .task-text {
   text-decoration: line-through;
 }
 
-.countdown, .reminder {
-  font-weight: bold;
-  color: var(--urgent-color);
+.date-time-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.timer {
-  font-weight: bold;
-  color: var(--secondary-color);
-  font-family: 'Times New Roman', Times, serif
+.date-time-inputs label {
+  color: var(--text-color);
+  font-size: 0.9rem;
 }
-
-
 
 #suu {
   color: rgb(245, 66, 206);
 }
-
 
 footer {
   position: fixed;
@@ -223,3 +276,36 @@ footer div {
   color: black;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #todo-form {
+    grid-template-columns: 1fr;
+  }
+
+  .task-actions {
+    flex-direction: column;
+  }
+
+  #task-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Input number styles */
+input[type="number"] {
+  width: 60px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
